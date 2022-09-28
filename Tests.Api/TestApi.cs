@@ -20,7 +20,7 @@ public class TestApi
     public async Task TestReturnsErrorWithBadRequest()
     {
         var client = new HttpClient();
-        var result = await client.GetAsync("http://api:5075/Distance?startLatitude=DEFINITELY_NOT_A_NUMBER");
+        var result = await clieghnt.GetAsync("http://api:5075/Distance?startLatitude=DEFINITELY_NOT_A_NUMBER");
         Assert.AreEqual(HttpStatusCode.BadRequest, result.StatusCode);
     }
 }
