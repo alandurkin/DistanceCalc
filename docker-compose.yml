@@ -16,3 +16,9 @@ services:
     build:
       context: .
       dockerfile: Tests.Api/Dockerfile
+
+  unit-tests:
+    image: unit-tests
+    build:
+      context: .
+      dockerfile: Tests.Services/Dockerfile
